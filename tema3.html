@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos Académicos - Colegio San Miguel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .document-card {
+            transition: transform 0.3s;
+            border-left: 4px solid #007bff;
+            height: 100%;
+        }
+        
+        .document-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .category-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+        
+        .resource-icon {
+            font-size: 1.8rem;
+            color: #007bff;
+        }
+        
+        .sidebar-nav {
+            position: sticky;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+             <img src="im/logo.png" alt="Logo" style="height: 60px" /> Plataforma Educativa Interactiva
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#institucionales">Institucionales</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href#academicos">Académicos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#normativos">Normativos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="bg-primary text-white py-5 mt-5">
+    <div class="container text-center">
+        <h1 class="display-4">Repositorio Académico Institucional</h1>
+        <p class="lead">Acceso a toda la documentación educativa y recursos pedagógicos</p>
+        <div class="row mt-4 g-4">
+            <div class="col-md-3">
+                <div class="bg-white text-dark p-3 rounded">
+                    <h3>850+</h3>
+                    <p>Documentos disponibles</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="bg-white text-dark p-3 rounded">
+                    <h3>35</h3>
+                    <p>Categorías de recursos</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="bg-white text-dark p-3 rounded">
+                    <h3>24/7</h3>
+                    <p>Acceso permanente</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container py-5">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-3">
+            <div class="sidebar-nav">
+                <div class="list-group">
+                    <a href="#pei" class="list-group-item list-group-item-action">PEI</a>
+                    <a href="#curriculo" class="list-group-item list-group-item-action">Diseño Curricular</a>
+                    <a href="#evaluacion" class="list-group-item list-group-item-action">Sistema de Evaluación</a>
+                    <a href="#manuales" class="list-group-item list-group-item-action">Manuales Institucionales</a>
+                    <a href="#investigacion" class="list-group-item list-group-item-action">Investigación</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Documentos -->
+        <div class="col-md-9">
+            <!-- Search -->
+            <div class="mb-5">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Buscar documentos...">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Filtros -->
+            <div class="row mb-4 g-2">
+                <div class="col-auto">
+                    <select class="form-select">
+                        <option>Todas las categorías</option>
+                        <option>Gestión Institucional</option>
+                        <option>Académico</option>
+                        <option>Legal</option>
+                    </select>
+                </div>
+                <div class="col-auto">
+                    <select class="form-select">
+                        <option>Todos los años</option>
+                        <option>2024</option>
+                        <option>2023</option>
+                        <!-- Más años -->
+                    </select>
+                </div>
+            </div>
+
+            <!-- Document Cards -->
+            <div class="row g-4">
+                <!-- PEI -->
+                <div class="col-md-6">
+                    <div class="card document-card">
+                        <div class="card-body">
+                            <span class="badge bg-primary category-badge">PEI</span>
+                            <i class="fas fa-file-alt resource-icon mb-3"></i>
+                            <h5>Proyecto Educativo Institucional 2024-2028</h5>
+                            <p>Documento rector con el modelo pedagógico y planes estratégicos</p>
+                            <div class="d-flex justify-content-between text-muted small">
+                                <span>Actualizado: 15/01/2024</span>
+                                <span><i class="fas fa-download"></i> PDF 2.5MB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lista de 30+ documentos (ejemplos) -->
+                <!-- 2. Manual de Convivencia -->
+                <div class="col-md-6">
+                    <div class="card document-card">
+                        <div class="card-body">
+                            <span class="badge bg-success category-badge">Normativo</span>
+                            <i class="fas fa-balance-scale resource-icon mb-3"></i>
+                            <h5>Manual de Convivencia Actualizado</h5>
+                            <p>Protocolos y normativa de comportamiento estudiantil</p>
+                            <div class="d-flex justify-content-between text-muted small">
+                                <span>Versión 5.2</span>
+                                <span><i class="fas fa-external-link-alt"></i> En línea</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Continúa con los demás documentos -->
+                <!-- 3. Planes de Estudio -->
+                <!-- 4. Reglamento Evaluación -->
+                <!-- 5. Informe de Gestión Anual -->
+                <!-- 6. Certificación ISO 21001 -->
+                <!-- 7. Protocolos COVID-19 -->
+                <!-- 8. Plan de Mejoramiento -->
+                <!-- 9. Proyectos Investigación -->
+                <!-- 10. Convenios Internacionales -->
+                <!-- 11. Plan de Formación Docente -->
+                <!-- 12. Informe Pruebas Saber -->
+                <!-- 13. Política de Inclusión -->
+                <!-- 14. Protocolo Atención Padres -->
+                <!-- 15. Plan de Emergencias -->
+                <!-- 16. Reglamento Docente -->
+                <!-- 17. Proyecto Ambiental Escolar -->
+                <!-- 18. Informe Financiero -->
+                <!-- 19. Guías de Orientación -->
+                <!-- 20. Plan TIC Institucional -->
+                <!-- 21. Certificación Bilingüismo -->
+                <!-- 22. Proyecto Sexualidad -->
+                <!-- 23. Protocolo Bullying -->
+                <!-- 24. Plan de Lectura -->
+                <!-- 25. Modelo Pedagógico -->
+                <!-- 26. Informe Acreditación -->
+                <!-- 27. Plan Deportivo -->
+                <!-- 28. Reglamento Biblioteca -->
+                <!-- 29. Proyecto Artístico -->
+                <!-- 30. Política Datos Personales -->
+                <!-- 31. Protocolo Exámenes -->
+                <!-- 32. Plan Nutricional -->
+                <!-- 33. Informe Psicoorientación -->
+                <!-- 34. Estatuto Docente -->
+                <!-- 35. Proyecto STEM -->
+                
+                <!-- Cada documento con estructura similar -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Características -->
+<section class="bg-light py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4 text-center">
+                <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
+                <h4>Acceso Seguro</h4>
+                <p>Plataforma con autenticación de dos factores y cifrado SSL</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fas fa-sync-alt fa-3x text-primary mb-3"></i>
+                <h4>Actualización Constante</h4>
+                <p>Documentos revisados y actualizados semanalmente</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fas fa-headset fa-3x text-primary mb-3"></i>
+                <h4>Soporte Técnico</h4>
+                <p>Asistencia permanente para acceso a recursos</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <h5>Accesos Directos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#pei" class="text-white text-decoration-none">PEI</a></li>
+                    <li><a href="#manuales" class="text-white text-decoration-none">Manuales</a></li>
+                    <li><a href="#informes" class="text-white text-decoration-none">Informes</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Legal</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Política de Privacidad</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Términos de Uso</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Contacto</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-envelope me-2"></i>documentacion@colegiosanmiguel.edu</li>
+                    <li><i class="fas fa-phone me-2"></i>(601) 555-1234</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="text-center mb-0">&copy; 2024 Colegio San Miguel - Todos los derechos reservados</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Filtrado y búsqueda
+    document.addEventListener('DOMContentLoaded', () => {
+        const searchInput = document.querySelector('input[type="text"]');
+        const categoryFilter = document.querySelectorAll('select')[0];
+        const yearFilter = document.querySelectorAll('select')[1];
+        
+        function filterDocuments() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const category = categoryFilter.value;
+            const year = yearFilter.value;
+            
+            document.querySelectorAll('.col-md-6').forEach(card => {
+                const text = card.textContent.toLowerCase();
+                const cardCategory = card.querySelector('.badge').textContent;
+                const cardYear = card.querySelector('span').textContent;
+                
+                const matchSearch = text.includes(searchTerm);
+                const matchCategory = category === 'Todas las categorías' || cardCategory === category;
+                const matchYear = year === 'Todos los años' || cardYear.includes(year);
+                
+                card.style.display = (matchSearch && matchCategory && matchYear) ? 'block' : 'none';
+            });
+        }
+        
+        searchInput.addEventListener('keyup', filterDocuments);
+        categoryFilter.addEventListener('change', filterDocuments);
+        yearFilter.addEventListener('change', filterDocuments);
+    });
+</script>
+</body>
+</html>

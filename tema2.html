@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logros y Reconocimientos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .achievement-card {
+            transition: transform 0.3s;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            height: 100%;
+        }
+        
+        .achievement-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .trophy-icon {
+            font-size: 2.5rem;
+            color: #ffd700;
+        }
+        
+        .badge-category {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+        
+        .timeline-year {
+            background: #007bff;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar (Mismo que en el anterior) -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="im/logo.png" alt="Logo" style="height: 60px" /> Plataforma Educativa Interactiva
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#historia">Historia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#logros">Logros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#galeria">Galería</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero-section d-flex align-items-center">
+    <div class="container text-center">
+        <h1 class="display-4 mb-4">Legado de Excelencia</h1>
+        <p class="lead mb-4">25 años formando líderes y cosechando éxitos</p>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-3">
+                <div class="bg-white p-3 rounded text-primary">
+                    <h3>150+</h3>
+                    <p>Premios Nacionales</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="bg-white p-3 rounded text-primary">
+                    <h3>45</h3>
+                    <p>Reconocimientos Internacionales</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="bg-white p-3 rounded text-primary">
+                    <h3>9</h3>
+                    <p>Menciones Presidenciales</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Logros Section -->
+<section id="logros" class="py-5 gradient-bg">
+    <div class="container">
+        <h2 class="text-center mb-5 display-4">Nuestros Logros Destacados</h2>
+        
+        <!-- Filtros -->
+        <div class="row mb-5 justify-content-center">
+            <div class="col-auto">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-primary active" data-filter="all">Todos</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="academico">Académico</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="deportivo">Deportivo</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="cultural">Cultural</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <!-- Logro 1 -->
+            <div class="col-md-4" data-category="academico">
+                <div class="card achievement-card">
+                    <span class="badge bg-primary badge-category">Académico</span>
+                    <img src="https://source.unsplash.com/random/600x400/?trophy,science" class="card-img-top" alt="Premio Ciencias">
+                    <div class="card-body">
+                        <div class="timeline-year">2023</div>
+                        <i class="fas fa-trophy trophy-icon mb-3"></i>
+                        <h5>Premio Nacional a la Innovación Educativa</h5>
+                        <p>Reconocimiento por nuestro programa STEM integrado con realidad virtual</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Organizador:</strong> Ministerio de Educación</li>
+                            <li><strong>Categoría:</strong> Tecnología Educativa</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Logro 2 -->
+            <div class="col-md-4" data-category="deportivo">
+                <div class="card achievement-card">
+                    <span class="badge bg-success badge-category">Deportivo</span>
+                    <img src="https://source.unsplash.com/random/600x400/?soccer,trophy" class="card-img-top" alt="Campeonato Fútbol">
+                    <div class="card-body">
+                        <div class="timeline-year">2022</div>
+                        <i class="fas fa-medal trophy-icon mb-3"></i>
+                        <h5>Campeonato Nacional Interescolar de Fútbol</h5>
+                        <p>Primer lugar en categoría sub-17 con récord histórico de goles</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Participantes:</strong> 120 colegios</li>
+                            <li><strong>Marca:</strong> 15 victorias consecutivas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Más logros (continuar con estructura similar) -->
+            <!-- Logro 3-20: Ejemplos variados -->
+            <!-- Ejemplos de logros a incluir:
+            1. Premio Internacional de Robótica (Singapur 2021)
+            2. Mejor Proyecto Ecológico Latinoamericano (2020)
+            3. Oro en Olimpiada Matemática CONAMAT (2019)
+            4. Campeones Nacionales de Debate Estudiantil (2018)
+            5. Premio Excelencia Docente UNESCO (2017)
+            6. Primer lugar Concurso Oratoria Nacional (2016)
+            7. Reconocimiento como Escuela Verde Certificada (2015)
+            8. Medalla de Oro en Olimpiada de Física (2014)
+            9. Premio Innovación en Educación Financiera (2013)
+            10. Campeonato Nacional de Atletismo Sub-15 (2012)
+            11. Premio Mejor Proyecto Social Estudiantil (2011)
+            12. Clasificación al Mundial Escolar de Ajedrez (2010)
+            13. Premio Nacional de Literatura Juvenil (2009)
+            14. Reconocimiento a la Excelencia Académica Continua (2008-2023)
+            15. Primer lugar en Feria de Ciencias Nucleares (2007)
+            16. Trofeo Fair Play Deportivo Internacional (2006)
+            17. Premio Arquitectura Sustentable Escolar (2005)
+            18. Medalla de Honor al Mérito Educativo (2004)
+            19. Campeonato Nacional de Natación (2003)
+            20. Premio Innovación Tecnológica Educativa (2002)
+            -->
+        </div>
+    </div>
+</section>
+
+<!-- Galería de Trofeos -->
+<section id="galeria" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5 display-4">Galería de Reconocimientos</h2>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <img src="https://source.unsplash.com/random/400x300/?medal" class="card-img-top" alt="Medallas">
+                    <div class="card-body">
+                        <h6>Colección de Medallas</h6>
+                        <small>125 medallas en diversas disciplinas</small>
+                    </div>
+                </div>
+            </div>
+            <!-- Repetir para más elementos de galería -->
+        </div>
+    </div>
+</section>
+
+<!-- Footer (Mismo que en el anterior) -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Filtrado de logros
+    document.querySelectorAll('[data-filter]').forEach(button => {
+        button.addEventListener('click', () => {
+            const filter = button.dataset.filter;
+            document.querySelectorAll('[data-category]').forEach(card => {
+                card.style.display = (filter === 'all' || card.dataset.category === filter) ? 'block' : 'none';
+            });
+            
+            document.querySelectorAll('[data-filter]').forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+        });
+    });
+</script>
+</body>
+</html>
